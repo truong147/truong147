@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu Ứng Bát Úp Quay</title>
+    <style>
+        /* Tạo hình bát úp */
+        .bowl {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            border-radius: 50%;
+            position: relative;
+            margin: 100px auto;
+            border: 5px solid blue;
+            animation: spin 3s linear infinite; /* Áp dụng hiệu ứng quay */
+        }
+
+        /* Hiệu ứng quay */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg); /* Bắt đầu từ 0 độ */
+            }
+            to {
+                transform: rotate(360deg); /* Quay đủ 360 độ */
+            }
+        }
+
+        /* Tạo hình mặt úp (bên dưới bát) */
+        .bowl::before {
+            content: "";
+            width: 130px;
+            height: 65px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bowl"></div>
+
+</body>
+</html>

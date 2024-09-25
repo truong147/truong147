@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../download.png" type="image/x-icon">
+    <title>Trò Chơi Tài Xỉu</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .dice {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            margin: 10px;
+            font-size: 24px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #betting {
+            margin-top: 20px;
+        }
+        #betResult {
+            font-weight: bold;
+        }
+        #rules {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tài Xỉu</h1>
+        <p>Nhấn nút để quay xúc xắc!</p>
+        <div id="diceContainer">
+            <div class="dice" id="dice1">1</div>
+            <div class="dice" id="dice2">1</div>
+            <div class="dice" id="dice3">1</div>
+        </div>
+        <button id="rollButton">Quay</button>
+
+        <div id="betting">
+            <h2>Đặt Cược</h2>
+            <label for="betAmount">Số tiền đặt cược:</label>
+            <input type="number" id="betAmount" min="1" value="1">
+            <button id="betButton">Đặt Cược</button>
+            <h3 id="betResult"></h3>
+        </div>
+
+        <h2 id="result"></h2>
+
+        <div id="rules">
+            <h3>Quy Tắc Chơi</h3>
+            <p>Khi tổng số xúc xắc lớn hơn 10, bạn thắng!</p>
+            <p>Khi tổng số xúc xắc nhỏ hơn hoặc bằng 10, bạn thua!</p>
+        </div>
+    </div>
+
+    <script>
+        let totalBet = 0;
+
+        document.getElementById('rollButton').addEventListener('click', function() {
+            // Tạo số ngẫu nhiên cho mỗi xúc xắc
+            let dice1 = Math.floor(Math.random() * 6) + 1;
+            let dice2 = Math.floor(Math.random() * 6) + 1;
+            let dice3 = Math.floor(Math.random() * 6) + 1;
+
+            // Cập nhật hiển thị xúc xắc
+            document.getElementById('dice1').textContent = dice1;
+            document.getElementById('dice2').textContent = dice2;
+            document.getElementById('dice3').textContent = dice3;
+
+            // Tính tổng
+            let total = dice1 + dice2 + dice3;
+            document.getElementById('result').textContent = 'Tổng: ' + total;
+
+            // Kiểm tra kết quả đặt cược
+            checkBet(total);
+        });
+
+        document.getElementById('betButton').addEventListener('click', function() {
+            let betAmount = parseInt(document.getElementById('betAmount').value);
+            totalBet += betAmount;
+            document.getElementById('betResult').textContent = 'Bạn đã đặt cược: ' + totalBet + ' đơn vị';
+        });
+
+        function checkBet(total) {
+            let betAmount = parseInt(document.getElementById('betAmount').value);
+            if (total > 10) {
+                document.getElementById('betResult').textContent += ' - Bạn thắng! Giành được ' + (betAmount * 2) + ' đơn vị!';
+            } else {
+                document.getElementById('betResult').textContent += ' - Bạn thua! Mất ' + betAmount + ' đơn vị.';
+            }
+        }
+    </script>
+
+</body>
+</html>
