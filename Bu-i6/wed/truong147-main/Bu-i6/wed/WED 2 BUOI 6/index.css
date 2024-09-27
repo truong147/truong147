@@ -1,0 +1,65 @@
+#thu-ngay{
+    margin-top: 0;
+    margin-right: 20px;
+}
+#ha-noi{
+    margin-top: 0;
+    margin-right: 20px;
+}
+#moi-nhat{
+    margin-top: 0;
+    margin-right: 20px;
+}
+#tin-theo-khu-vuc{
+    margin-top: 0;
+    margin-right: 20px;
+}
+#international{
+    margin-top: 0;
+    margin-right: 20px;
+}
+.menu{
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.menu:hover {
+    color: red;
+}
+#danh-sach{
+    top: 0;
+    position: sticky;
+    background-color: white;
+    display: flex;
+    box-shadow: rgb(33, 35, 38, 0.1 )0px 10px 10px -10px;
+}
+#ngay-thang-chi-tiet{
+    text-decoration: none;
+    
+}
+#food-tua{
+    color: red;
+}
+p {
+    font-weight: 500;
+}
+.khong-in-dam{
+    font-weight: 100;
+}
+#bai-lien-quan{
+    border: 1px  solid #ccc;
+    padding: 20px;
+}
+#cung-chuyen-muc{
+    border: 1px  solid #ccc;
+    padding: 20px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+tr{
+    border-bottom: 1px solid #ccc;
+}
+.dan-cach{
+    margin: 10px 0 10px 0 ;
+}
