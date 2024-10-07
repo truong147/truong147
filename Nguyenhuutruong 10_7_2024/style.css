@@ -1,0 +1,211 @@
+.tieu-de{
+    text-decoration: none;
+    color: black;
+    font-weight: 5;
+}
+.i{
+    margin-right: 15px;
+    font-weight: 5;
+}
+.a{
+    margin-right: 100px;
+}
+.b{
+    margin-right: 15px;
+}
+.logo{
+    margin-top: -10px;
+}
+.box-menu{
+    margin-top: -18px;
+    margin-bottom:-18px ;
+    background-color: rgb(248, 247, 246);
+}
+.box-menu ul{
+    text-align: center
+}
+.box-menu ul li{
+    color: #f7b4eb;
+    width: 86px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-table;
+    font-size: small;
+    position: relative; 
+    border: 1;
+    }
+.box-menu ul li a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+ }
+.box-menu ul li a:hover{
+    position: relative;
+    cursor: progress;
+    color: #333;
+}
+.box-menu ul li > .sub-menu {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    margin-left: -45px;
+    background-color: #fcf6f6;
+}
+.box-menu ul li:hover .sub-menu{
+    display: block;
+}
+.sub-menu{
+    text-align: center;
+    font-size: small;
+}
+#subk{
+    z-index: 1;
+    position: absolute;
+}
+ul,li{
+    list-style: none;
+}
+.noidung{
+    margin-top: -16px;
+    background-color: #161c29;
+    color: #fff;
+   
+}
+.footer{
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+}
+.footer1{
+    text-decoration: none;
+    color: rgb(93, 140, 240);
+    text-align: center;
+}
+.footer2{
+    margin-left: 710px;
+    color: gray;
+    text-align: center;
+}
+#ykien{
+    width: 700px;
+    height: 70px;
+    border-radius: 10px;
+    border-left: 3px solid brown;
+    border-bottom: 0.5px solid rgb(190, 186, 186);
+    border-top:0.5px solid rgb(190, 186, 186) ;
+    border-right: 0.5px solid rgb(190, 186, 186);
+}
+
+#cung-chuyen-muc{
+    border: 1px  solid;
+    padding: 20px;
+    background-color: black;
+    margin-top: -8px;
+}
+tr{
+    border-bottom: 1px solid;
+}
+
+.dan-cach{
+margin: 5x 0 5px 0 ;
+}
+p{
+    color: white;
+}
+#cau_hoi{
+    background-color: black;
+    border: 1px solid ;
+    padding: 20px;
+    margin-top: -8px;  
+}
+.co_chu{ 
+    font-size: 17px;
+    font-family: arial;
+    text-align:left;
+    margin: 20px 600px 20px 670px;  
+}
+
+
+.back{
+    background-color: rgb(99, 96, 96);
+    font-size: 18px; height: 50px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+#dm:hover{
+    color: brown;
+    margin: 0;
+}
+#m:hover{
+    color: rgb(14, 216, 216);
+}
+#m{
+    margin: 0;
+    padding: 16.5px 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-right: 15px;
+}
+#dm{
+    margin: 0;
+    margin-right: 15px;
+    padding: 16.5px 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.cm{
+    width: 830px;
+}
+#mh{
+    height: 185px;
+    width: 250px;
+}
+#nd1{
+    width: 560px;
+}
+.cm1{
+    width: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid brown;
+    text-decoration: none;
+    color: #000;
+}
+#xt{
+    margin: 0px 0px 0px 870px;
+    text-decoration: none;
+    color: #000000;
+}
+.sd{
+    width: 195px;
+}
+td h3{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#ml{
+    list-style: none;
+}
+#ml1 a{
+ text-decoration:none ;
+ color: #000;
+}
+#ul-foter ul{
+    padding: 0px 30px 0px 0px;
+}
+#ul-foter {
+    width: 170px;
+    height: 290px;
+}
+#ul-foter a{
+color: #000;
+text-decoration: none;
+}
+#ul-foter a:hover{
+text-decoration: underline;
+}
+
